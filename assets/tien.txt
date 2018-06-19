@@ -1,0 +1,5 @@
+It's important to understand that LOCK_EX will not prevent reading the file unless you also explicitly acquire a read lock (shared locked) with the PHP 'flock' function.
+
+i.e. in concurrent scenarios file_get_contents may return empty if you don't wrap it like this:
+
+If you have code that does a file_get_contents on a file, changes the string, then re-saves using file_put_contents, you better be sure to do this correctly or your file will randomly wipe itself out.
