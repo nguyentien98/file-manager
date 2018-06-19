@@ -16,7 +16,6 @@ if ($path) {
 if ($delete) {
 	$file->deleteFile($delete);
 }
-
 ?>
 
 <!DOCTYPE html>

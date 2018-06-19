@@ -222,7 +222,8 @@ class FileManager
 			$this->path .= '/'.$path;
 			return true;
 		}
-		return false;
+		echo "404. Not found";
+		die;
 	}
 
     public function scan(): array

@@ -2,7 +2,7 @@
     "name": "tiennguyen/file-manager",
     "description": "Package for manage your files and folders.",
     "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "license": "MIT",
     "authors": [
         {
             "name": "Tien Nguyen",
